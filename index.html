@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio Personal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Mi Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hola, soy <span class="highlight">Desarrollador</span>
+                </h1>
+                <p class="hero-description">
+                    Desarrollador Full Stack apasionado por crear experiencias digitales 
+                    increíbles. Especializado en desarrollo web moderno y tecnologías emergentes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="contact.html" class="btn btn-secondary">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/profile.jpg" alt="Foto de perfil" class="profile-img">
+                <div class="image-decoration"></div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Mis Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, PHP, MySQL, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile</h3>
+                    <p>React Native, Flutter, Progressive Web Apps</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Herramientas</h3>
+                    <p>Git, Docker, AWS, Figma, Photoshop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos Destacados -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-preview">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                        <div class="project-overlay">
+                            <a href="projects.html" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Moderno</h3>
+                        <p>Tienda online completa con React y Node.js</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/proyecto2.jpg" alt="Proyecto 2">
+                        <div class="project-overlay">
+                            <a href="projects.html" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>App de Gestión</h3>
+                        <p>Aplicación web para gestión de tareas</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/proyecto3.jpg" alt="Proyecto 3">
+                        <div class="project-overlay">
+                            <a href="projects.html" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Panel de control con visualización de datos</p>
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="projects.html" class="btn btn-outline">Ver Todos los Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mi Portfolio</h3>
+                    <p>Desarrollador Full Stack apasionado por la tecnología y la innovación.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="about.html">Sobre Mí</a></li>
+                        <li><a href="projects.html">Proyectos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mi Portfolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

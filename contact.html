@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Mi Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Mi Portfolio</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Mis Proyectos</h1>
+            <p class="page-subtitle">Una colección de mis trabajos más destacados</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Diseño</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto1.jpg" alt="E-commerce Moderno">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-project="ecommerce">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Moderno</h3>
+                            <p>Plataforma completa de comercio electrónico con carrito de compras, sistema de pagos y panel de administración.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto2.jpg" alt="App de Gestión">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-project="taskmanager">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Manager Pro</h3>
+                            <p>Aplicación web para gestión de tareas con colaboración en tiempo real y sistema de notificaciones.</p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">Socket.io</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto3.jpg" alt="Dashboard Analytics">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-project="dashboard">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Panel de control interactivo para visualización de datos con gráficos dinámicos y reportes en tiempo real.</p>
+                            <div class="project-tags">
+                                <span class="tag">Angular</span>
+                                <span class="tag">D3.js</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="project-item" data-category="mobile">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto1.jpg" alt="App Fitness">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-project="fitness">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>FitTracker App</h3>
+                            <p>Aplicación móvil para seguimiento de entrenamientos con integración de wearables y comunidad social.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="project-item" data-category="design">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto2.jpg" alt="Brand Identity">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-project="branding">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Brand Identity Design</h3>
+                            <p>Diseño completo de identidad corporativa incluyendo logo, paleta de colores y guía de estilo.</p>
+                            <div class="project-tags">
+                                <span class="tag">Adobe Illustrator</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/proyecto3.jpg" alt="Blog Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-project="blog">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Blog Platform CMS</h3>
+                            <p>Sistema de gestión de contenidos personalizado con editor WYSIWYG y optimización SEO.</p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Strapi</span>
+                                <span class="tag">GraphQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-features">
+                        <h4>Características:</h4>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Tecnologías:</h4>
+                        <div id="modalTags" class="project-tags"></div>
+                    </div>
+                    <div class="modal-links">
+                        <a id="modalGithub" href="#" class="btn btn-outline">Ver Código</a>
+                        <a id="modalLive" href="#" class="btn btn-primary">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Me encantaría ayudarte a convertir tu idea en realidad</p>
+                <a href="contact.html" class="btn btn-primary">Hablemos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mi Portfolio</h3>
+                    <p>Desarrollador Full Stack apasionado por la tecnología y la innovación.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre Mí</a></li>
+                        <li><a href="projects.html">Proyectos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mi Portfolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
